@@ -1,8 +1,15 @@
 import React from 'react'
+import logo from '../assets/chatMeLogo.png'
 
-const AuthLayout = () => {
+const AuthLayout = ({children}) => {
   return (
-    <div>AuthLayout</div>
+    <>
+      <header>
+        <img src={logo} alt='logo' className='' />
+      </header>
+
+      {children}
+    </>
   )
 }
 
